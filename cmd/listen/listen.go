@@ -41,7 +41,7 @@ type ProcessSigMessage struct {
 }
 
 func Listen() (err error) {
-	endpoint := rpc.MainNetBetaSerum_WS
+	endpoint := "wss://solana-mainnet.g.alchemy.com/v2/0I_nW4OORROSEx6kzwEnvNGceWnE6ep8"
 
 	fmt.Println("In Listen")
 	magicEdenClient, err := ws.Connect(context.Background(), endpoint)
